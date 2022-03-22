@@ -146,7 +146,6 @@ class Map<SourceType, ResultType>: Observable<ResultType> {
 
     // 4. NEW: MapSinkに上流を処理して下流のObserverにまかせるSink
     private class MapSink<SourceType, Observer: ObserverType>: ObserverType {
-        typealias Element = SourceType
         // mapの入力と出力をTransformとしてfunction typeを決める
         typealias Transform = (SourceType) throws -> ResultType
 

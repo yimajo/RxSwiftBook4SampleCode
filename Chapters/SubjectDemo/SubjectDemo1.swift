@@ -154,7 +154,6 @@
 //    private class MapSink<SourceType, Observer: ObserverType>
 //        : Sink<Observer>, ObserverType {
 //
-//        typealias Element = SourceType
 //        typealias Transform = (SourceType) throws -> ResultType
 //
 //        typealias ResultType = Observer.Element
